@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+body > img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+body > header {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+header > nav {
+    grid-column: 1/-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > button {
+    height: 100px;
+    width: 100px;
+    color: white;
+    border: none;
+    background: rgba(0,0,0,0.0);
+    font-size:x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#order {
+    height: 60px;
+    width: 120px;
+    align-self: center;
+    font-size:x-large;
+    color: white;
+    background: rgba(0,0,0,0.0);
+    border: 2px solid orange;
+}
