@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
-* {
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+header * {
+    font-family: "PT Sans Narrow", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    height: 100vh;
     width: 100vw;
     margin: 0;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr, 3fr;
 }
 
 body > img {
@@ -27,7 +27,7 @@ body > header {
 }
 
 header > nav {
-    grid-column: 1/-2;
+    grid-column: 2/-2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,17 +39,106 @@ nav > button {
     color: white;
     border: none;
     background: rgba(0,0,0,0.0);
-    font-size:x-large;
+    font-size:40px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+nav > button:hover {
+    color: grey;
+}
+
+nav > button:active {
+    color: azure;
+}
+
 #order {
-    height: 60px;
-    width: 120px;
+    height: 70px;
+    width: 140px;
     align-self: center;
-    font-size:x-large;
+    font-size:40px;
     color: white;
     background: rgba(0,0,0,0.0);
     border: 2px solid orange;
+}
+
+#content {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: #F6F7F8;
+}
+
+#div1 {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#div1 > img {
+    grid-column: 1/2;
+}
+
+#div2 {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#div2 > img {
+    grid-column: 2/3;
+    height: 50vh;
+    width: 40vw;
+}
+
+.cardtext {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cardtext2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cardtext2 > button {
+    height: 70px;
+    width: 250px;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: #F1C808;
+    font-family: "PT Sans Narrow", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cardtextLarge {
+    font-family: "PT Sans Narrow", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.cardtextSmall {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #3A3D3F;
+    align-self: center;
+}
+
+.cardtext > button {
+    height: 70px;
+    width: 150px;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: #F1C808;
+    font-family: "PT Sans Narrow", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
